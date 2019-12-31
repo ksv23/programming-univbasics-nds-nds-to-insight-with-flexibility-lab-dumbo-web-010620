@@ -81,9 +81,9 @@ def gross_per_studio(collection)
     movie_data = collection[row_index]
 
     if !array_gross[movie[:studio]] #access the hash[:studio] from the array[movie]
-      array_gross[movie[:studio]] = movie[:worldwide_gross]
+      array_gross[movie[:studio]] = movie_data[:worldwide_gross]
     else
-      array_gross[movie[:studio]] += movie[:worldwide_gross] #add gross if same studio
+      array_gross[movie[:studio]] += movie_data[:worldwide_gross] #add gross if same studio
     end
     row_index += 1
   end
