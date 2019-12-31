@@ -94,6 +94,8 @@ def movies_with_directors_set(source)
 
   while row_index < source.length do
     movie_data = source[row_index]
+    director_name = movie_data[:name]
+    director_movie = movie_data[:movies]
     array_movies << movie_with_director_names(name, movie_data)
     row_index += 1
   end
