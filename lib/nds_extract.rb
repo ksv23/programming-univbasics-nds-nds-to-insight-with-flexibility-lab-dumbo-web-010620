@@ -56,6 +56,7 @@ def movies_with_director_key(name, movies_collection)
     array_director << movie_with_director_name(name, movie_data)
     row_index += 1
   end
+  puts array_director
   array_director
 end
 
