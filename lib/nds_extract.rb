@@ -93,10 +93,13 @@ def movies_with_directors_set(source)
   row_index = 0
 
   while row_index < source.length do
+    movie_data = source[row_index]
 
 
 
     row_index += 1
+
+    binding.pry
   end
 
 
