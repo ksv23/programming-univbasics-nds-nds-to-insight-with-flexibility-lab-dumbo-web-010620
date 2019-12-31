@@ -52,7 +52,8 @@ def movies_with_director_key(name, movies_collection)
   array_director = []
   row_index = 0
   while row_index < movies_collection.length do
-    binding.pry
+    movie_data = movies_collection[row_index]
+    movie_with_director_name(name, movie_data)
 
   end
 end
