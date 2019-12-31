@@ -79,9 +79,12 @@ def gross_per_studio(collection)
 
   while row_index < collection.length do
     movie_data = collection[row_index]
-    studio_name = movie_data[:studio]
-    movie_gross = movie_data[:worldwide_gross]
-    array_movies << movies_with_director_key[studio_name, movie_gross]
+
+    if array_gross[movie[:studio]] #access the hash[:studio] from the array[movie]
+      array_gross[movie[:studio]] = movie[:worldwide_gross]
+    else
+      array_gross[movie[:studio]] += movie[:worldwide_gross]
+    end
     row_index += 1
   end
 
