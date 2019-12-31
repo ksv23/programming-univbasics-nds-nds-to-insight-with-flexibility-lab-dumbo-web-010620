@@ -99,8 +99,9 @@ def movies_with_directors_set(source)
     array_movies << movie_with_director_names(director_name, director_movie)
     row_index += 1
   end
-
+  
   array_movies
+  binding.pry
 end
 
 # ----------------    End of Your Code Region --------------------
