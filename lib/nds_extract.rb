@@ -82,7 +82,6 @@ def gross_per_studio(collection)
     studio_name = movie_data[:studio]
     movie_gross = movie_data[:worldwide_gross]
     array_movies << movies_with_director_key[studio_name, movie_gross]
-
     row_index += 1
   end
 
