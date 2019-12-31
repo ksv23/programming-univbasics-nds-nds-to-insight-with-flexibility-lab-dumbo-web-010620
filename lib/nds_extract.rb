@@ -59,6 +59,7 @@ def movies_with_director_key(name, movies_collection)
   end
 
   array_director
+  binding.pry
 end
 
 
@@ -93,6 +94,7 @@ def movies_with_directors_set(source)
   row_index = 0
 
   while row_index < source.length do
+
 
 
     row_index += 1
